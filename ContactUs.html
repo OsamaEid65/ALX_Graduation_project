@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" type="x-icon" href="https://logos-download.com/wp-content/uploads/2016/05/Kempinski_logo.png">
+    <script src="/New_Website_TT284/JS/form-validation.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="https://images-ext-1.discordapp.net/external/_iLQIl3rD86aWGKTI-kRI2ZRYMXGN3FU8hdqntG7KIk/https/i.ibb.co/VQ6JBy2/Untitled-1.png?format=webp&quality=lossless&width=1025&height=404" style="width: 200px; height:auto;">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="current" href="ContactUs.html">Contact Us</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Sign_Up.html">Sign Up</a> </li>
+                    <li><a href="login.html">Login</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contact-form" class="py-3">
+        <div class="container">
+            <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
+            <p>Please fill out the form below, and we'll get back to you as soon as possible.</p>
+            
+            <!-- Success Message -->
+            <div id="success-message" style="display: none; color: green; margin-bottom: 20px;"></div>
+            
+            <form action="/New_Website_TT284/PHP/process.php" method="post" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address with Post Office</label>
+                    <input type="text" name="address" id="address" required> 
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea cols="30" rows="10" name="message" id="message"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <div>
+        <h1 style="text-align: center;" class="l-heading"><span class="text-primary">Our </span>Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.9376463716126!2d31.227834374849547!3d30.038646674926564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840cdb8f441cb%3A0x59cf96cf4cfe8978!2sKempinski%20Nile%20Hotel%20Garden%20City%20Cairo!5e0!3m2!1sen!2seg!4v1713339711355!5m2!1sen!2seg" width=100% height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer id="main-footer">
+        <p>Kempinski Hotel &copy; 2024, All Rights Reserved</p>
+    </footer>
+
+    <script>
+        
+        // Display success message if query parameter exists
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message');
+        if (message) {
+            const successMessageDiv = document.getElementById('success-message');
+            successMessageDiv.textContent = message;
+            successMessageDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
