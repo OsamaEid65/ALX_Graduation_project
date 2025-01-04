@@ -77,12 +77,13 @@ Welcome to **Osama Eid Store**, a fully responsive e-commerce platform developed
 ## Screenshots
 
 ### Homepage
-![Homepage Screenshot](img/Screenshot (425).png)
+![alt text](../../../../../xampp/htdocs/online-shopping-webvsite-in-php-master/img/Home.png)
+
 ### Product Categories
-![Product Categories Screenshot](img/Screenshot (427).png)
+![alt text](../../../../../xampp/htdocs/online-shopping-webvsite-in-php-master/img/product.png)
 
 ### CART
-![Cart Screenshot](img/Screenshot (428).png)
+![alt text](../../../../../xampp/htdocs/online-shopping-webvsite-in-php-master/img/cart.png)
 
 ## License
 
