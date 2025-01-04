@@ -72,21 +72,17 @@ Welcome to **Osama Eid Store**, a fully responsive e-commerce platform developed
 
 ## Future Enhancements
 
-- **Dynamic Product Management**: Integrate a database (e.g., MySQL) to manage products dynamically.
-- **User Authentication**: Implement features like user login, signup, and logout.
-- **Shopping Cart**: Enable users to add items to a cart and proceed with a checkout process.
 - **Enhanced UI**: Introduce modern animations, interactivity, and improved accessibility.
 
 ## Screenshots
 
 ### Homepage
-_(Add a screenshot of the homepage here)_
-
+![Homepage Screenshot](../img/Screenshot (425).png)
 ### Product Categories
-_(Add a screenshot showcasing product categories here)_
+![Product Categories Screenshot](../img/Screenshot (427).png)
 
-### Footer
-_(Add a screenshot of the footer here)_
+### CART
+![Cart Screenshot](../img/Screenshot (428).png)
 
 ## License
 
